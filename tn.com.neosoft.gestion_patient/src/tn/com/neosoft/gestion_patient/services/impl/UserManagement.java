@@ -47,7 +47,8 @@ public class UserManagement implements IUserManagement {
 		try {
 
 			Transaction transaction = session.beginTransaction();
-			session.delete(findUserByID(i));
+			User userFound = findUserByID(i);
+			session.delete(userFound);
 			transaction.commit();
 			b = true;
 		} catch (Exception e) {

@@ -30,6 +30,7 @@ public class TestApplication {
 
 	@Test
 	public void testDeleteUser() {
+
 		Assert.assertTrue(iUserManagement.deleteUserById(1));
 	}
 }
