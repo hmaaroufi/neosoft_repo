@@ -20,7 +20,7 @@ public class AddPersonne extends JFrame {
 
 	private JPanel contentPane;
 	private JTextField textField;
-	private ManagementPatient managementPatient;
+	private ManagementPatient managementPatient=new ManagementPatient();
 
 	/**
 	 * Launch the application.
