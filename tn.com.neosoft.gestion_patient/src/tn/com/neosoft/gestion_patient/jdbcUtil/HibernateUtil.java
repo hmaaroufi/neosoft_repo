@@ -8,6 +8,11 @@ public class HibernateUtil {
 
 	private static SessionFactory sessionFactory;
 	private static Session session;
+	private static HibernateUtil instanceOf;
+
+	private HibernateUtil() {
+		// TODO Auto-generated constructor stub
+	}
 
 	public static Session getSession() {
 
@@ -17,6 +22,11 @@ public class HibernateUtil {
 			session = sessionFactory.getCurrentSession();
 		}
 		return session;
+	}
+
+	public static HibernateUtil getInstanceOf() {
+		instanceOf = new HibernateUtil();
+		return instanceOf;
 	}
 
 }

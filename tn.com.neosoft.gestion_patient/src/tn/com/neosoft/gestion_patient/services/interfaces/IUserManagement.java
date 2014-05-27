@@ -6,4 +6,8 @@ public interface IUserManagement {
 
 	boolean addUser(User user);
 
+	User findUserByID(int i);
+
+	boolean deleteUserById(int i);
+
 }
