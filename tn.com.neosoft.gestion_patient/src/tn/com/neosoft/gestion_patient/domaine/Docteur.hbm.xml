@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27 mai 2014 10:35:16 by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <joined-subclass name="tn.com.neosoft.gestion_patient.domaine.Docteur" extends="tn.com.neosoft.gestion_patient.domaine.User" table="DOCTEUR" lazy="false">
+        <key>
+            <column name="ID" />
+        </key>
+        <property name="speciality" type="java.lang.String">
+            <column name="SPECIALITY" />
+        </property>
+    </joined-subclass>
+</hibernate-mapping>
