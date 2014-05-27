@@ -14,8 +14,8 @@ public class TestApplication {
 	@Test
 	public void testAddUser() {
 		User user = new User();
-		user.setLogin("hma");
-		user.setPassword("hma");
+		user.setLogin("houda");
+		user.setPassword("houda");
 
 		Assert.assertTrue(iUserManagement.addUser(user));
 
@@ -23,7 +23,7 @@ public class TestApplication {
 
 	@Test
 	public void testSearchUser() {
-		User user = iUserManagement.findUserByID(1);
+		User user = iUserManagement.findUserByID(2);
 		Assert.assertEquals("hma", user.getLogin());
 
 	}
@@ -31,6 +31,6 @@ public class TestApplication {
 	@Test
 	public void testDeleteUser() {
 
-		Assert.assertTrue(iUserManagement.deleteUserById(1));
+		Assert.assertTrue(iUserManagement.deleteUserById(4));
 	}
 }
